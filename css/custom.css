@@ -1,0 +1,14 @@
+/* custom results styles
+-------------------------------------------------- */
+@font-face {
+font-family: 'Alien Encounters Solid Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Alien Encounters Solid Italic'), url('../fonts/ALIEESI_.woff') format('woff');
+}
+
+.navbar-brand-custom-font {
+	font-family:'Alien Encounters Solid Italic';
+	font-weight:normal;
+	font-size: 2.3REM;
+}

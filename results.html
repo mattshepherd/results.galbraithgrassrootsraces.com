@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Matt Shepherd, Galbraith Gravity Racing">
+    <title>GGR Race Results</title>
+
+
+    
+
+    <!-- Bootstrap core CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <!-- Custom styles for this template -->
+    <link href="./css/custom.css" rel="stylesheet">
+	<link href="./css/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body class="d-flex flex-column h-100">
+    
+<header>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+	<div class="container">
+	    <a class="navbar-brand navbar-brand-custom-font" href="./index.html">GGR <small class="text-muted">RESULTS</small></a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarCollapse">
+	      <ul class="navbar-nav ml-auto">
+	        <li class="nav-item">
+	          <a class="nav-link" href="./index.html">Results</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="http://www.galbraithgravity.com">GGR</a>
+	        </li>
+	      </ul>
+	    </div>
+	</div>
+  </nav>
+</header>
+
+<!-- Begin page content -->
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5" id="race-title"></h1>
+	  <h3 class="text-muted" id="race-date"></h3>
+	  <hr />
+	  <table class="table table-sm" id="results-table">
+	</table>
+  </div>
+</main>
+
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+          <div class="row">
+              <div class="col-sm">
+                <span class="text-muted">&copy; <span id="year"></span> Galbraith Gravity Racing</span>
+              </div>
+              <div class="col-sm text-sm-right">
+                <a href="http://www.galbraithgravity.com">www.galbraithgravity.com</a>
+              </div>
+          </div>
+        </div>
+        <script>
+          window.onload = function(){
+          var date = new Date().getFullYear();
+          document.getElementById("year").innerHTML = date;
+          }
+        </script>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/results.js"></script>
+      
+  </body>
+</html>
