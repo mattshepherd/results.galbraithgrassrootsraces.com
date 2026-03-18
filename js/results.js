@@ -15,9 +15,9 @@ $.urlParam = function(name){
 }
 
 function getRaceData(raceID,isTraining){
-  var dataUrl = "api/races";
+  var dataUrl = "api/races.json";
   if(isTraining == 1){
-    dataUrl = "api/training_races"
+    dataUrl = "api/training_races.json"
   }
   $.ajax({
     url: dataUrl,
@@ -34,7 +34,7 @@ function getRaceData(raceID,isTraining){
 
 function getResultsData(raceID){
   $.ajax({
-    url: "api/results/"+raceID,
+    url: "api/results/"+raceID+".json",
     success: function( data ) {
       outputResults(data);
     },

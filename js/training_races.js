@@ -5,7 +5,7 @@ $( document ).ready(function() {
 
 function getRaceData(){
   $.ajax({
-    url: "api/training_races",
+    url: "api/training_races.json",
     success: function( data ) {
       outputRaces(data);
     },
