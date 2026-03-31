@@ -121,7 +121,7 @@ function checkForNullAndEscapeTime(value){
   if(value == null){
     return "00:00:00.000";
   }else{
-	value = moment.duration(value).format("d.HH:mm:ss", 2);;
+	value = moment.duration(value).format("d.HH:mm:ss", 3);;
 	//value = value.slice(0,-1);
     return $("<div>").text(value).html();
   }
